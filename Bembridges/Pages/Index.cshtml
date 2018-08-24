@@ -4,93 +4,148 @@
     ViewData["Title"] = "Home page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+<!-- Header with Background Image -->
+<header class="business-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="display-3 text-center text-white mt-4"></h1>
             </div>
         </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+</header>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core Razor Pages</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="mt-4">What we do</h2>
+
+            <p>
+                We are a small family-run business, trading in Chesterfield for more than 60 years. We offer a personal friendly service from our experienced staff.
+                All our buildings are manufactured on site and we maintain a high quality standard at competitive prices.
+            </p>
+
+            <p>
+                At Bembridges we specialise in custom made Sheds, Garages, Fences, Gates, and Summerhouses. All our products are hand-built to order at our Woodyard using only quality materials.
+                We have a team of highly skilled and experienced fitters who will setup your structure.
+            </p>
+
+            <p>Please feel free to come down and visit our showroom to view a selection of the products that we have to offer. Alternatively a sample of our product range can be found below:</p>
+
+            <!--
+            <p>
+                <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+            </p> -->
+
+        </div>
+        <div class="col-sm-4">
+            <h2 class="mt-4">Contact us</h2>
+            <address>
+                <br>53 Lordsmill Street
+                <br>Chesterfield
+                <br>S41 7RS
+            </address>
+            <address>
+                Tel:
+                01246 273969
+                <br>
+                Email:
+                <a href="mailto:#">enquiries@bembridgessheds.co.uk</a>
+            </address>
+
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?linkid=852130">Working with Razor Pages.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-sm-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/shed.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Sheds</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/fence.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Fences</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/summer.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Summerhouses</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
+    <!-- /.row -->
+
+    <div class="row">
+        <div class="col-sm-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/greenhouse.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Greenhouses</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/gates.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Fences</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/images/decking.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Decking</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure App Service</a></li>
-        </ul>
+
+    <br />
+    <div class="row">
+        <div class="col-sm-12" style="text-align: center;">
+
+            <h2 class="mt-8">Visit our showroom</h2>
+
+            Opening Times:<br />
+            Mon-Fri - 8:30am - 5:00pm<br />
+            Sat - 8:30am - 2:30pm<br />
+            Bank Holidays - 8:30am - 4:00pm<br /><br />
+
+            <iframe style="border:0px;width: 100%;" height="400" src="http://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=s417rs&amp;aq=&amp;sll=53.800651,-4.064941&amp;sspn=8.623693,21.159668&amp;ie=UTF8&amp;hq=&amp;hnear=S41+7RS,+United+Kingdom&amp;t=m&amp;ll=53.232615,-1.421206&amp;spn=0.006037,0.016801&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
+
+        </div>
     </div>
+
+    <br />
+
 </div>
