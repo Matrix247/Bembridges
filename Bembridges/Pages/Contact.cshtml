@@ -2,18 +2,72 @@
 @model ContactModel
 @{
     ViewData["Title"] = "Contact";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<br />
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<!-- Page Content -->
+<div class="container">
+
+    <h1 class="my-4 text-center text-lg-left">Get In Touch</h1>
+
+    <h3 class="clearfix" style="color: forestgreen">@Model.Message</h3>
+
+    <p>
+        Please use the below form to send us a message. We always aim to respond to your queries within
+        24 hours, although during busy periods this is not always possible so please bare with us.
+    </p>
+
+    <form id="contact-form" method="post">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Name is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="text" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_number">Phone</label>
+                    <input id="form_number" type="text" name="phone" class="form-control" placeholder="Please enter your phone number">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <button type="submit">Send Message</button>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+<br />

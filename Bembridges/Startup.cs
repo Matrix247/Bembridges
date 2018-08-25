@@ -1,4 +1,5 @@
 
+using Bembridges.Classes;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -28,6 +29,7 @@ namespace Bembridges
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSingleton(Configuration.GetSection("SmtpSettings").Get<SmtpSettings>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
