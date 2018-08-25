@@ -6,6 +6,100 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\Products\gh_1.jpg" />
+    <None Include="wwwroot\images\Products\gh_1_sm.jpg" />
+    <None Include="wwwroot\images\Products\gh_2.jpg" />
+    <None Include="wwwroot\images\Products\gh_2_sm.jpg" />
+    <None Include="wwwroot\images\Products\gh_3.jpg" />
+    <None Include="wwwroot\images\Products\gh_3_sm.jpg" />
+    <None Include="wwwroot\images\Products\logo.jpg" />
+    <None Include="wwwroot\images\Products\photo0.png" />
+    <None Include="wwwroot\images\Products\photo0_sm.png" />
+    <None Include="wwwroot\images\Products\photo10.png" />
+    <None Include="wwwroot\images\Products\photo10_sm.png" />
+    <None Include="wwwroot\images\Products\photo11.png" />
+    <None Include="wwwroot\images\Products\photo11_sm.png" />
+    <None Include="wwwroot\images\Products\photo12.png" />
+    <None Include="wwwroot\images\Products\photo12_sm.png" />
+    <None Include="wwwroot\images\Products\photo13.png" />
+    <None Include="wwwroot\images\Products\photo13_sm.png" />
+    <None Include="wwwroot\images\Products\photo14.png" />
+    <None Include="wwwroot\images\Products\photo14_sm.png" />
+    <None Include="wwwroot\images\Products\photo15.png" />
+    <None Include="wwwroot\images\Products\photo15_sm.png" />
+    <None Include="wwwroot\images\Products\photo16.png" />
+    <None Include="wwwroot\images\Products\photo16_sm.png" />
+    <None Include="wwwroot\images\Products\photo17.png" />
+    <None Include="wwwroot\images\Products\photo17_sm.png" />
+    <None Include="wwwroot\images\Products\photo18.JPG" />
+    <None Include="wwwroot\images\Products\photo18_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo19.JPG" />
+    <None Include="wwwroot\images\Products\photo19_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo2.png" />
+    <None Include="wwwroot\images\Products\photo20.png" />
+    <None Include="wwwroot\images\Products\photo20_sm.png" />
+    <None Include="wwwroot\images\Products\photo21.png" />
+    <None Include="wwwroot\images\Products\photo21_sm.png" />
+    <None Include="wwwroot\images\Products\photo22.png" />
+    <None Include="wwwroot\images\Products\photo22_sm.png" />
+    <None Include="wwwroot\images\Products\photo23.png" />
+    <None Include="wwwroot\images\Products\photo23_sm.png" />
+    <None Include="wwwroot\images\Products\photo24.png" />
+    <None Include="wwwroot\images\Products\photo24_sm.png" />
+    <None Include="wwwroot\images\Products\photo25.png" />
+    <None Include="wwwroot\images\Products\photo25_sm.png" />
+    <None Include="wwwroot\images\Products\photo26.png" />
+    <None Include="wwwroot\images\Products\photo26_sm.png" />
+    <None Include="wwwroot\images\Products\photo27.jpg" />
+    <None Include="wwwroot\images\Products\photo27.png" />
+    <None Include="wwwroot\images\Products\photo27_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo27_sm.png" />
+    <None Include="wwwroot\images\Products\photo28.jpg" />
+    <None Include="wwwroot\images\Products\photo28.png" />
+    <None Include="wwwroot\images\Products\photo28_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo28_sm.png" />
+    <None Include="wwwroot\images\Products\photo29.jpg" />
+    <None Include="wwwroot\images\Products\photo29_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo2_sm.png" />
+    <None Include="wwwroot\images\Products\photo3.png" />
+    <None Include="wwwroot\images\Products\photo30.jpg" />
+    <None Include="wwwroot\images\Products\photo30_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo31.png" />
+    <None Include="wwwroot\images\Products\photo31_sm.png" />
+    <None Include="wwwroot\images\Products\photo32.jpg" />
+    <None Include="wwwroot\images\Products\photo32_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo33.jpg" />
+    <None Include="wwwroot\images\Products\photo33_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo34.JPG" />
+    <None Include="wwwroot\images\Products\photo34_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo35.jpg" />
+    <None Include="wwwroot\images\Products\photo35_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo36.jpg" />
+    <None Include="wwwroot\images\Products\photo36_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo37.jpg" />
+    <None Include="wwwroot\images\Products\photo37_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo38.jpg" />
+    <None Include="wwwroot\images\Products\photo38_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo39.jpg" />
+    <None Include="wwwroot\images\Products\photo39_sm.jpg" />
+    <None Include="wwwroot\images\Products\photo3_sm.png" />
+    <None Include="wwwroot\images\Products\photo4.png" />
+    <None Include="wwwroot\images\Products\photo4_sm.png" />
+    <None Include="wwwroot\images\Products\photo5.png" />
+    <None Include="wwwroot\images\Products\photo5_sm.png" />
+    <None Include="wwwroot\images\Products\photo6.png" />
+    <None Include="wwwroot\images\Products\photo6_sm.png" />
+    <None Include="wwwroot\images\Products\photo7.png" />
+    <None Include="wwwroot\images\Products\photo7_sm.png" />
+    <None Include="wwwroot\images\Products\photo8.png" />
+    <None Include="wwwroot\images\Products\photo8_sm.png" />
+    <None Include="wwwroot\images\Products\photo9.png" />
+    <None Include="wwwroot\images\Products\photo9_sm.png" />
+    <None Include="wwwroot\images\Products\photo_29_sm.jpg" />
   </ItemGroup>
 
 </Project>
