@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Providing quality custom built sheds, garages, fences, and summer houses in the Chesterfield area for over 65 years." />
     <meta name="author" content="">
 
-    <title>@ViewData["Title"] - Bembridges</title>
+    <title>Sheds Chesterfield | Summer Houses Chesterfield | Bembridges</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -64,6 +64,10 @@
 
     @RenderBody()
 
+    <div id="cookieConsent">
+        <div id="closeCookieConsent">x</div>
+        This website is using cookies. <a href="/privacy" target="_blank">More info</a>. <a class="cookieConsentOK">That's Fine</a>
+    </div>
 
     <!-- /.container -->
     <!-- Footer -->
@@ -82,7 +86,7 @@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.js"></script>
     <script src="~/js/site.js"></script>
- 
+
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
@@ -96,12 +100,16 @@
         })();
 
         $(document).ready(function () {
-            setTimeout(function () {
-                $("#cookieConsent").fadeIn(200);
-            }, 4000);
-            $("#closeCookieConsent, .cookieConsentOK").click(function () {
-                $("#cookieConsent").fadeOut(200);
-            });
+            var consentCookie = getCookie('consentCookie');
+            if (consentCookie !== "set") {
+                setTimeout(function () {
+                    $("#cookieConsent").fadeIn(200);
+                }, 4000);
+                $("#closeCookieConsent, .cookieConsentOK").click(function () {
+                    setCookie('consentCookie', 'set', 100);
+                    $("#cookieConsent").fadeOut(200);
+                });
+            }
         });
 
     </script>
