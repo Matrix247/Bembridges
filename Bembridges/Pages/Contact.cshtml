@@ -5,6 +5,8 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <br />
 
 <!-- Page Content -->
@@ -23,9 +25,15 @@
 
         <div class="row">
             <div class="col-md-6">
+                <div class="g-recaptcha" data-sitekey="6LfOBQoTAAAAALPDUzrIN-sc0KLnrV3c2ZJ8Lukl"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_name">Name *</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Name is required.">
+                    <label for="FullName">Name *</label>
+                    <input id="FullName" type="text" value="@Model.FullName" name="FullName" class="form-control" placeholder="Please enter your name *" required="required" data-error="Name is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -34,8 +42,8 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="text" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Email is required.">
+                    <label for="Email">Email *</label>
+                    <input id="Email" type="text" value="@Model.Email" name="Email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Email is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -44,8 +52,8 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_number">Phone</label>
-                    <input id="form_number" type="text" name="phone" class="form-control" placeholder="Please enter your phone number">
+                    <label for="Phone">Phone</label>
+                    <input id="Phone" type="text" value="@Model.Phone" name="Phone" class="form-control" placeholder="Please enter your phone number">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -55,8 +63,8 @@
 
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <label for="UserMessage">Message *</label>
+                    <textarea id="UserMessage" name="UserMessage" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message.">@Model.UserMessage</textarea>
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
