@@ -61,7 +61,7 @@ namespace Bembridges.Pages
 
                 if (obj.success == false)
                 {
-                    Message = "You entered the reCAPTCHA code incorrectly, please try again";
+                    Message = "Please click the checkbox to confirm you're not a robot";
                     return Page();
                 }
 
